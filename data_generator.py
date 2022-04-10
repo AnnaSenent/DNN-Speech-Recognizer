@@ -323,9 +323,10 @@ def plot_mfcc_feature(vis_mfcc_feature):
     ax.set_xticks(np.arange(0, 13, 2), minor=False);
     plt.show()
 
+
 def plot_spectrogram_feature(vis_spectrogram_feature):
     # plot the normalized spectrogram
-    fig = plt.figure(figsize=(12,5))
+    fig = plt.figure(figsize=(12, 5))
     ax = fig.add_subplot(111)
     im = ax.imshow(vis_spectrogram_feature, cmap=plt.cm.jet, aspect='auto')
     plt.title('Normalized Spectrogram')
@@ -335,4 +336,3 @@ def plot_spectrogram_feature(vis_spectrogram_feature):
     cax = divider.append_axes("right", size="5%", pad=0.05)
     plt.colorbar(im, cax=cax)
     plt.show()
-
